@@ -1,6 +1,11 @@
 
 # Stream Viewer
 
+## Unreleased (fork: masterherby88)
+
+### Bug Fixes
+- Dashboard tile was an empty box with the Neoraid theme plugin. The stock-table width rule in `widget.css` now applies only without the `nr` class on `<html>`. See `docs/neoraid-compat.md`. Not yet verified on a live Neoraid system.
+
 ## v2026.10.27
 
 ### Improvements

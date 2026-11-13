@@ -60,8 +60,10 @@
   box-sizing: border-box !important;
 }
 /* a table cell is sized by its content and ignores overflow, max-width 0 is what keeps
-   the dashboard column from being widened, the cell still fills the column */
-#db-streamviewer > tr > td { max-width: 0 !important; }
+   the dashboard column from being widened, the cell still fills the column.
+   Only for the stock table layout: Neoraid (html.nr) turns the cell into a block,
+   where max-width 0 collapses the whole widget to zero width (see docs/neoraid-compat.md) */
+html:not(.nr) #db-streamviewer > tr > td { max-width: 0 !important; }
 
 /* 7.2 header */
 /* containment, not overflow, is what stops a table cell from being widened by its content */
