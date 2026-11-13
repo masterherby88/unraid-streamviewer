@@ -5,6 +5,7 @@
 
 ### Bug Fixes
 - Dashboard tile was an empty box with the Neoraid theme plugin. The stock-table width rule in `widget.css` now applies only without the nr class on the html element. See `docs/neoraid-compat.md`. Not yet verified on a live Neoraid system.
+- Neoraid: the Stream Viewer title block was centred in the header. It is now left-aligned like the other tiles, and the icon uses the Neoraid tile plate. Stock theme unchanged.
 
 ## v2026.10.27
 

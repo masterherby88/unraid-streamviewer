@@ -917,3 +917,22 @@ html:not(.nr) #db-streamviewer > tr > td { max-width: 0 !important; }
   .sv-stream__chart-row .sv-chart { height: 29px; }
   .sv-stream__chart-row .sv-chart__yaxis { min-width: 18px; font-size: 7px; }
 }
+
+/* Neoraid: its .tile-header-left centres its children (align-items: center), which
+   pulled the title block to the middle. Keep the stock left alignment, and give the
+   icon the same plate as the other tiles. Scoped to html.nr, stock is unchanged. */
+html.nr .sv-header__left { align-items: flex-start; }
+html.nr .sv-header__top { align-items: center; }
+html.nr .sv-header__icon {
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  box-sizing: border-box;
+  padding: .7rem;
+  margin: 0;
+  border-radius: 1rem;
+  background-color: var(--nr-accent-soft);
+}
+html.nr .sv-header-meta {
+  margin-top: 0;
+  padding-left: calc(3.6rem + 1.2rem);
+}
