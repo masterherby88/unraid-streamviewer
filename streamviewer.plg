@@ -2,12 +2,12 @@
 <!DOCTYPE PLUGIN [
  <!ENTITY name      "streamviewer">
  <!ENTITY author    "Lazaros Chalkidis">
- <!ENTITY version   "2026.10.27">
- <!ENTITY branch    "main">
- <!ENTITY gitURL    "https://github.com/Lazaros-Chalkidis/unraid-streamviewer">
- <!ENTITY pluginURL "&gitURL;/releases/download/&version;/&name;-&version;.txz">
+ <!ENTITY version   "2026.11.13a-dev">
+ <!ENTITY branch    "neoraid-compat">
+ <!ENTITY gitURL    "https://github.com/masterherby88/unraid-streamviewer">
+ <!ENTITY pluginURL "&gitURL;/raw/&branch;/packages/&name;-&version;.txz">
  <!ENTITY selfURL   "&gitURL;/raw/&branch;/&name;.plg">
- <!ENTITY md5       "a0f01b0d4a03f627b12a4e02d63b8c55">
+ <!ENTITY md5       "bc9b379e839dffcea4d85fefecb1f226">
  <!ENTITY launch    "Settings/StreamViewerSettings">
 ]>
 
@@ -15,7 +15,7 @@
         pluginURL="&selfURL;" launch="&launch;"
         icon="img/streamviewerplugin.png"
         min="7.2.0"
-        support="https://github.com/Lazaros-Chalkidis/unraid-streamviewer/issues">
+        support="https://github.com/masterherby88/unraid-streamviewer/issues">
 
 <DESCRIPTION>
 A real-time media stream monitor and statistics tracker for Plex, Jellyfin and Emby. View active streams directly from the dashboard, and track detailed watch history through a dedicated statistics page.
@@ -24,6 +24,11 @@ A real-time media stream monitor and statistics tracker for Plex, Jellyfin and E
 <CHANGES>
 
 # Stream Viewer
+
+## Unreleased (fork: masterherby88)
+
+### Bug Fixes
+- Dashboard tile was an empty box with the Neoraid theme plugin. The stock-table width rule in `widget.css` now applies only without the `nr` class on `<html>`. See `docs/neoraid-compat.md`. Not yet verified on a live Neoraid system.
 
 ## v2026.10.27
 
