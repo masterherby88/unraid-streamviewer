@@ -7,7 +7,7 @@
  <!ENTITY gitURL    "https://github.com/masterherby88/unraid-streamviewer">
  <!ENTITY pluginURL "&gitURL;/raw/&branch;/packages/&name;-&version;.txz">
  <!ENTITY selfURL   "&gitURL;/raw/&branch;/&name;.plg">
- <!ENTITY md5       "bc9b379e839dffcea4d85fefecb1f226">
+ <!ENTITY md5       "493e0b7b276840735a903166cef67e7f">
  <!ENTITY launch    "Settings/StreamViewerSettings">
 ]>
 
@@ -28,7 +28,7 @@ A real-time media stream monitor and statistics tracker for Plex, Jellyfin and E
 ## Unreleased (fork: masterherby88)
 
 ### Bug Fixes
-- Dashboard tile was an empty box with the Neoraid theme plugin. The stock-table width rule in `widget.css` now applies only without the `nr` class on `<html>`. See `docs/neoraid-compat.md`. Not yet verified on a live Neoraid system.
+- Dashboard tile was an empty box with the Neoraid theme plugin. The stock-table width rule in `widget.css` now applies only without the nr class on the html element. See `docs/neoraid-compat.md`. Not yet verified on a live Neoraid system.
 
 ## v2026.10.27
 
